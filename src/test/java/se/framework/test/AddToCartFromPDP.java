@@ -30,7 +30,12 @@ public class AddToCartFromPDP extends BasicTestCase {
             String Size = PDPage.getSelectedSize(PDPage.Size);
         }
         String NameOfProduct = PDPage.ProductName.getText();
-        String Price = PDPage.Price.getText();
+        String Price;
+        if (PDPage.isElementPresent(PDPage.NewPrice)){
+            Price = PDPage.NewPrice.getText();
+        }else {
+            Price = PDPage.Price.getText();
+        }
         String Qty = PDPage.Qty.getAttribute("value");
         CartPage = PDPage.clickAddToCart();
         //assertTrue(CartPage.TextPresent("Your Shopping Cart"));   Not used

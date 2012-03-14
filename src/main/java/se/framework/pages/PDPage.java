@@ -101,8 +101,11 @@ public class PDPage extends Page {
     @FindBy(css = "a.button.btn-wishlist")
     public WebElement AddToWishlist;
 
-    @FindBy(xpath = "//div/span/span")
+    @FindBy(xpath = "//span/span")
     public WebElement Price;
+
+    @FindBy(xpath = "//span[2]/span")
+    public WebElement NewPrice;
 
     @FindBy(id = "qty")
     public WebElement Qty;
