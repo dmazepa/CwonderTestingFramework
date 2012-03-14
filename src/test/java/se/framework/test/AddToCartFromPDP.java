@@ -43,9 +43,9 @@ public class AddToCartFromPDP extends BasicTestCase {
         assertTrue(CartPage.TextPresent(NameOfProduct + " was added to your shopping cart."));
         // assertTrue(CartPage.TextPresent("You have (1) item in your cart"));  Not used
         assertEquals(NameOfProduct, CartPage.ProductName.getText());
-        if (Size != null) {
+        /*if (Size != null) {
             assertEquals("Size:  " + Size, CartPage.Size.getText());
-        }
+        }*/
         assertEquals(Qty, CartPage.Qty.getAttribute("value"));
         assertEquals(Price, CartPage.Price.getText());
         assertEquals(Price, CartPage.SubtotalTable.getText());

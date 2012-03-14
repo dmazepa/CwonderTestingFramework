@@ -19,7 +19,7 @@ public class CLPSortTest extends BasicTestCase {
 
 
     @Test(enabled = true)
-    public void testSortByNameCLPGuest() throws Exception {
+    public void testSortCLPGuest() throws Exception {
         System.out.println("testSortByNameCLPGuest");
         CLPage.openrandom();
         assertEquals("Sort By", CLPage.SortBy.getText());

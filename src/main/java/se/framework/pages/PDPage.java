@@ -75,7 +75,7 @@ public class PDPage extends Page {
     @Override
     public CartPage clickAddToCart() throws InterruptedException {
         buttonAddToCart.click();
-        Thread.sleep(7000);
+        Thread.sleep(8000);
         return PageFactory.initElements(driver, CartPage.class);
     }
 
